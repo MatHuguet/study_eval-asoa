@@ -12,9 +12,10 @@
   --bgdark3: #1d2529;
   --bgdark4: #11161b;
 
-  --bglight1: #838581;
-  --bglight2: #6e706d;
-  --bglight3: #5a5c58;
+  --bglight1: #d8d8d8;
+  --bglight2: #838581;
+  --bglight3: #6e706d;
+  --bglight4: #5a5c58;
 
   /*font colors custom properties */
   --fontdark: #11161b;
@@ -37,13 +38,13 @@ div {
   padding: 0;
 }
 
-content {
+section {
   font-family: var(--poppins);
   color: var(--fontdark);
-  margin-top: 2rem;
+  background-color: var(--bglight1);
 }
 
-content > p {
+section > p {
   padding-left: 5rem;
   padding-right: 5rem;
   font-weight: 600;
@@ -58,7 +59,8 @@ content > p {
 }
 
 .navigation {
-  height: 4rem;
+  margin: 0;
+  height: 5rem;
   background-color: var(--bgdark4);
   color: var(--fontlight);
   justify-content: space-evenly;
@@ -76,8 +78,4 @@ content > p {
 .contact {
   font-weight: 600;
   text-decoration: none;
-}
-
-.first-content {
-  background-color: var(--bglight1);
 }
