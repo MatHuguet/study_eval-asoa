@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 
   /*bg colors custom properties*/
 
@@ -15,4 +15,9 @@
   /*font colors custom properties */
   --fontdark: #11161b;
   --fontlight: #d8d8d8;
+}
+
+div {
+  margin: 0;
+  padding: 0;
 }
