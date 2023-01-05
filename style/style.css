@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   /* margin: 0;
   padding: 0; */
+  font-size: 18px;
 
   /*bg colors custom properties*/
 
   --bgdark1: #354446;
   --bgdark2: #293437;
   --bgdark3: #1d2529;
+  --bgdark4: #11161b;
 
   --bglight1: #838581;
   --bglight2: #6e706d;
@@ -15,9 +19,65 @@
   /*font colors custom properties */
   --fontdark: #11161b;
   --fontlight: #d8d8d8;
+
+  /*fonts */
+  --poppins: "Poppins", sans-serif;
+}
+
+a {
+  color: var(--fontlight);
+}
+
+a:visited {
+  color: var(--fontlight);
 }
 
 div {
   margin: 0;
   padding: 0;
+}
+
+content {
+  font-family: var(--poppins);
+  color: var(--fontdark);
+  margin-top: 2rem;
+}
+
+content > p {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-weight: 600;
+}
+
+.first-p {
+  padding-top: 4rem;
+}
+
+.second-p {
+  padding-bottom: 4rem;
+}
+
+.navigation {
+  height: 4rem;
+  background-color: var(--bgdark4);
+  color: var(--fontlight);
+  justify-content: space-evenly;
+  font-family: var(--poppins);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-decoration: underline;
+}
+
+.event,
+.contact {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.first-content {
+  background-color: var(--bglight1);
 }
