@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /*bg colors custom properties*/
+
+  --bgdark1: #354446;
+  --bgdark2: #293437;
+  --bgdark3: #1d2529;
+
+  --bglight1: #838581;
+  --bglight2: #6e706d;
+  --bglight3: #5a5c58;
+
+  /*font colors custom properties */
+  --fontdark: #11161b;
+  --fontlight: #d8d8d8;
+}
