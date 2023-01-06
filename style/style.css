@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
 
 * {
   /* margin: 0;
@@ -52,7 +52,7 @@ h2 {
   font-weight: 600;
 }
 
-.title {
+.absolute-text {
   position: absolute;
   width: 100vw;
   text-align: center;
@@ -84,11 +84,16 @@ section {
 }
 
 .second-content {
-  z-index: 0;
+  z-index: -1;
   background-color: var(--bgdark3);
   color: var(--fontlight);
   transform: translateY(-9rem);
   padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.third-content {
+  padding-top: 0;
 }
 
 section > p {
@@ -111,6 +116,30 @@ section > p {
   width: 75%;
   z-index: 2;
   transform: translateY(-3rem);
+}
+
+.inter-section2 {
+  position: relative;
+  width: 75%;
+  z-index: 2;
+  transform: translateY(-13rem);
+}
+
+.inter-section-text {
+  width: 100vw;
+  position: absolute;
+  z-index: 3;
+  color: var(--fontlight);
+  transform: translateY(-6rem);
+  text-align: center;
+}
+
+h3 {
+  width: 100%;
+  font-family: var(--roboto);
+  font-weight: 300;
+  font-size: 1.4rem;
+  /* padding-left: 2.5rem; */
 }
 
 .navigation {
