@@ -162,6 +162,20 @@ h3 {
 
 .event,
 .contact {
+  font-size: 1.4rem;
   font-weight: 400;
   text-decoration: none;
+}
+
+.contact-text {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-family: var(--poppins);
+}
+
+footer {
+  display: block;
+  height: 6rem;
+  background-color: var(--bgdark3);
+  margin-top: 2rem;
 }
