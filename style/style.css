@@ -94,6 +94,7 @@ section {
 
 .third-content {
   padding-top: 0;
+  transform: translateY(-3rem);
 }
 
 section > p {
@@ -119,10 +120,11 @@ section > p {
 }
 
 .inter-section2 {
-  position: relative;
+  position: absolute;
   width: 75%;
   z-index: 2;
   transform: translateY(-13rem);
+  right: 0;
 }
 
 .inter-section-text {
