@@ -174,8 +174,8 @@ h3 {
 }
 
 footer {
-  display: block;
   height: 6rem;
   background-color: var(--bgdark3);
   margin-top: 2rem;
+  color: var(--fontlight);
 }
