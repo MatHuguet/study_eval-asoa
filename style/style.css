@@ -28,7 +28,7 @@
   --roboto: "Roboto", sans-serif;
 
   /*responsive sizes */
-  --resPadding: clamp(4rem, 4rem * 2px, 10rem);
+  --respText: calc(4rem, 4rem * 2px, 10rem);
 }
 
 a {
@@ -54,7 +54,7 @@ h2 {
 
 .absolute-text {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   z-index: 2;
   text-decoration: underline;
@@ -121,9 +121,9 @@ section > p {
 
 .inter-section2 {
   position: absolute;
-  width: 75%;
+  width: 60%;
   z-index: 2;
-  transform: translateY(-13rem);
+  transform: translateY(-15rem);
   right: 0;
 }
 
