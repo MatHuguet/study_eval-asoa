@@ -5,7 +5,6 @@
   /* margin: 0;
   padding: 0; */
   font-size: 18px;
-  perspective: 100;
 
   /*bg colors custom properties*/
 
@@ -28,12 +27,19 @@
   --roboto: "Roboto", sans-serif;
 
   /*responsive fontsizes */
-  --fs-title: clamp(2rem, 10vw + 2rem, 15rem);
-  --fs-p: clamp(1rem, 5vw + 4px, 2rem);
+  --fs-title: clamp(2rem, 5vw + 2rem, 13rem);
+  --fs-subtitle: clamp(1.2rem, 2vw + 0.2rem, 8rem);
+  --fs-inter-title: clamp(1.4rem, 2vw + 0.3rem, 4rem);
+  --fs-nav-items: clamp(1rem, 2vw + 0.2rem, 2.1rem);
+  --fs-p: clamp(1rem, 2vw + 0.2rem, 1.4rem);
+
+  /*responsive padding*/
+  --respadding: clamp(0rem, 2vw + 0.4rem, 3rem);
 }
 
 a {
   color: var(--fontlight);
+  font-size: var(--fs-nav-items);
 }
 
 a:visited {
@@ -53,8 +59,15 @@ h1 {
 
 h2 {
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: var(--fs-subtitle);
   font-weight: 600;
+}
+
+h3 {
+  width: 100%;
+  font-family: var(--roboto);
+  font-weight: 300;
+  font-size: var(--fs-inter-title);
 }
 
 .absolute-text {
@@ -98,14 +111,12 @@ section {
 }
 
 .third-content {
-  padding-top: 0;
   transform: translateY(-3rem);
+  margin-top: 0;
 }
 
-section > p {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  font-weight: 600;
+.third-content > .first-p {
+  padding-top: var(--respadding);
 }
 
 .first-p {
@@ -113,9 +124,57 @@ section > p {
 }
 
 .second-p {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   margin: 0;
 }
+
+@media screen and (min-width: 540px) {
+  * {
+    --respadding: clamp(2rem, 10vw + 1.2rem, 8rem);
+  }
+}
+
+section > p {
+  padding: 0 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  section > p {
+    padding: 0 12rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  * {
+    --respadding: clamp(8rem, 16vw + 1rem, 20rem);
+  }
+
+  section > p {
+    padding: 0 18rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  * {
+    --respadding: clamp(0rem, 8vw + 1.2rem, rem);
+  }
+
+  section > p {
+    padding: 0 50rem;
+  }
+
+  .third-content > p {
+    padding-right: 60%;
+    padding-left: 20%;
+  }
+
+  .second-p {
+    padding-bottom: 8rem;
+    margin: 0;
+  }
+}
+
+/* Responsive images + text on first image with @media ----------------*/
 
 .inter-section {
   position: relative;
@@ -141,13 +200,24 @@ section > p {
   text-align: center;
 }
 
-h3 {
-  width: 100%;
-  font-family: var(--roboto);
-  font-weight: 300;
-  font-size: 1.4rem;
-  /* padding-left: 2.5rem; */
+@media screen and (min-width: 768px) {
+  .inter-section {
+    position: relative;
+    width: 40%;
+    z-index: 2;
+    transform: translateY(-3rem);
+  }
+
+  .inter-section2 {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    transform: translateY(-15rem);
+    right: 0;
+  }
 }
+
+/* --------------------------NAVIGATION ----------------------------------*/
 
 .navigation {
   margin: 0;
@@ -159,7 +229,7 @@ h3 {
 }
 
 .logo {
-  font-size: 1.1rem;
+  font-size: var(--fs-nav-items);
   font-weight: 700;
   letter-spacing: 4px;
   text-decoration: underline;
@@ -167,10 +237,12 @@ h3 {
 
 .event,
 .contact {
-  font-size: 1.4rem;
+  font-size: var(--fs-nav-items);
   font-weight: 400;
   text-decoration: none;
 }
+
+/*------------------------ Form and Footer --------------------- */
 
 .contact-text {
   padding: 1rem 2rem;
