@@ -80,6 +80,28 @@ h3 {
   top: 3rem;
 }
 
+@media screen and (min-width: 1080px) {
+  .absolute-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    text-decoration: underline;
+    color: var(--fontlight);
+    margin-top: 5rem;
+  }
+}
+
+.absolute-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  text-decoration: underline;
+  color: var(--fontlight);
+  top: 3rem;
+}
+
 div {
   margin: 0;
   padding: 0;
@@ -256,3 +278,49 @@ footer {
   margin-top: 2rem;
   color: var(--fontlight);
 }
+
+/* ---------------EVENT PAGE CONTENT--------------------------------*/
+
+.asoa-events {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+thead > tr > th {
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+tbody > tr > td {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  thead > tr > th {
+    font-size: 1.4rem;
+    text-decoration: underline;
+  }
+
+  tbody > tr > td {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .asoa-events {
+    text-align: center;
+    padding: 4rem 8rem;
+  }
+  thead > tr > th {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  tbody > tr > td {
+    font-size: 1.6rem;
+  }
+}
+
+/* .asoa-events > div {
+  border: solid 1px black;
+} */
