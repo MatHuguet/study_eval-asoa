@@ -33,9 +33,11 @@
   --fs-nav-items: clamp(1rem, 2vw + 0.2rem, 2.1rem);
   --fs-p: clamp(1rem, 2vw + 0.2rem, 1.4rem);
 
-  /*responsive padding*/
+  /*responsive padding for third content -> adapt text with image*/
   --respadding: clamp(0rem, 2vw + 0.4rem, 3rem);
 }
+
+/*---------GENERAL TEXT-TITLES-LINKS---------------- */
 
 a {
   color: var(--fontlight);
@@ -70,6 +72,13 @@ h3 {
   font-size: var(--fs-inter-title);
 }
 
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------TITLE TEXT--------------------------------- */
+
 .absolute-text {
   position: absolute;
   width: 100%;
@@ -90,21 +99,6 @@ h3 {
     color: var(--fontlight);
     margin-top: 5rem;
   }
-}
-
-.absolute-text {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-  text-decoration: underline;
-  color: var(--fontlight);
-  top: 3rem;
-}
-
-div {
-  margin: 0;
-  padding: 0;
 }
 
 /*MAIN - CONTENT SECTIONS */
@@ -152,6 +146,7 @@ section {
 
 @media screen and (min-width: 540px) {
   * {
+    /* Adapt padding for @media screen in custom properties*/
     --respadding: clamp(2rem, 10vw + 1.2rem, 8rem);
   }
 }
@@ -196,7 +191,8 @@ section > p {
   }
 }
 
-/* Responsive images + text on first image with @media ----------------*/
+/* Responsive inter-images between paragraphs
+ + text on first image with @media ----------------*/
 
 .inter-section {
   position: relative;
@@ -320,7 +316,3 @@ tbody > tr > td {
     font-size: 1.6rem;
   }
 }
-
-/* .asoa-events > div {
-  border: solid 1px black;
-} */
